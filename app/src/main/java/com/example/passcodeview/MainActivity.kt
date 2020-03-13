@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         passcodeView.setPasscodeLength(5).setLocalPasscode("00000").listener = object :
             PasscodeView.PasscodeViewListener {
             override fun onSuccess(number: String?) {
-                startActivity(Intent(this@MainActivity,WebViewActivity::class.java))
+                startActivity(Intent(this@MainActivity,OptionsActivity::class.java))
             }
 
             override fun onFail() {
